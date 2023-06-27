@@ -233,7 +233,8 @@ long transformaClave(const char* clave)
     d = 0;
     for (j = 0; j < strlen(clave); j++)
     {
-        d = d * 17 + clave[j];
+        d = d * 27 + clave[j];
+        printf("El valor de d es: %d\n", d);
     }
 
     if (d < 0) d = -d;
